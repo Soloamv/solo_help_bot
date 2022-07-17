@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="http://t.me/Satoru_gojo_abot"> <img src="https://te.legra.ph/file/bd19fc0087a6bf82efb15.jpg" alt="Yor Forger on Telegram" /> </a></br>
+  <a href="http://t.me/Satoru_gojo_abot"> <img src="[https://te.legra.ph/file/bd19fc0087a6bf82efb15.jpg](https://telegra.ph/file/66aa81d71b39372603a16.jpg)" alt="GOJO on Telegram" /> </a></br>
   <a href="https://github.com/SOME-1HING/yor-froger-bot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blueviolet?style=for-the-badge" alt="License" /> </a>
   <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-yellow?style=for-the-badge" alt="PRs" /></a></br>
   <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Made%20With-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>

@@ -84,13 +84,13 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-HELP_IMG = "https://telegra.ph//file/b3aedf8d65276f8241556.jpg"
+HELP_IMG = "https://telegra.ph/file/4b597f2975ae7a106d588.jpg"
 HELP_MSG = "Click the button below to get help menu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
-START_IMG = "https://telegra.ph/file/5ed8d6ab91ea9b9eaaad0.jpg"
+START_IMG = "https://telegra.ph/file/1b6028b60db77a712318b.jpg"
     
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/a15eb346fec9a0b1b2696.mp4) 」────
+────「 [{}](https://telegra.ph/file/24d6d3afc95f34e22d0cf.mp4) 」────
 Heyyo `{}`,  here to help,
 *I am an Anime themed advance group management bot with a lot of awesome Features*
 ┏━━━━━━━━━━━━━━━━━━━━
@@ -109,13 +109,13 @@ Haven't slept since: {}
 buttons = [
     [
         InlineKeyboardButton(
-            text="💖 ADD ME IN YOUR GROUP",url="http://t.me/Yor_forger_spyxfamily_bot?startgroup=true"),
+            text="ADD ME IN YOUR GROUP",url="http://t.me/Satoru_gojo_abot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-            text="⚙️ Support", url=f"https://t.me/Komisansupport"),                    
+            text="⚙️ Support", url=f"https://t.me/ethio_anime_editors"),                    
         InlineKeyboardButton(
-            text="Updates",  url=f"https://t.me/yorforgerbotupdates"
+            text="Updates",  url=f"https://t.me/gojosbotupdates"
         ),
     ],
     [
@@ -125,7 +125,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="Wallpaper Channel", url=f"https://t.me/animengameswall"),                    
+            text="AMV Channel", url=f"https://t.me/Ethio_amv_editors"),                    
     ],
     
 ]
@@ -260,7 +260,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
                 update.effective_message.reply_photo(
-            START_IMG, caption="<b>Hello, I'm Yor Forger!\nI'm Working Properly.</b>\nI am alive since: <code>{}</code>".format(
+            START_IMG, caption="<b>Hello, I'm GOJO神!\nI'm Working Properly.</b>\nI am alive since: <code>{}</code>".format(
                 uptime,
             ),
             parse_mode=ParseMode.HTML,
@@ -268,16 +268,16 @@ def start(update: Update, context: CallbackContext):
              reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Owner", url="https://t.me/Aug0felix")
+                  InlineKeyboardButton(text="Owner", url="https://t.me/mr_nack_nack")
                   ],
                   [
-                  InlineKeyboardButton(text="Manager", url="https://t.me/Sneha_UwU_OwO")
+                  InlineKeyboardButton(text="Manager", url="https://t.me/mrs_forger_x")
                   ],
                   [
-                  InlineKeyboardButton(text="❤Sᴜᴘᴘᴏʀᴛ❤", url="https://t.me/Komisansupport")
+                  InlineKeyboardButton(text="❤Sᴜᴘᴘᴏʀᴛ❤", url="https://t.me/ethio_anime_editors")
                   ],
                   [
-                  InlineKeyboardButton(text="🔰Uᴘᴅᴀᴛᴇs🔰", url="https://t.me/yorforgerbotupdates")
+                  InlineKeyboardButton(text="🔰Uᴘᴅᴀᴛᴇs🔰", url="https://t.me/gojosbotupdates")
                   ]
                 ]
             ),
@@ -636,7 +636,7 @@ def donate(update: Update, context: CallbackContext):
     bot = context.bot
     update.effective_message.reply_text(
         "You can also donate to the person currently running me "
-        "[here](https://ko-fi.com/AuraMoon55)",
+        "[here](https://ko-fi.com/alonegojo1)",
         parse_mode=ParseMode.MARKDOWN,
     )
 
@@ -669,7 +669,7 @@ def main():
         try:
             dispatcher.bot.send_photo(
                 "@Komisansupport",
-                "https://telegra.ph/file/48a7b1f82d491d38b3ca9.jpg",
+                "https://telegra.ph/file/5136ffb0451bfaba09e3a.jpg",
                 "I Am Up And Ready!",
                 parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -677,7 +677,7 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="[Start Me]",
-                             url="https://t.me/yor_forger_spyxfamily_bot?start=")
+                             url="https://t.me/Satoru_gojo_abot?start=")
                      ] 
                 ]
             ),  

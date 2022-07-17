@@ -7,7 +7,7 @@ import re
 import sys
 import traceback
 import YorForger.modules.sql.users_sql as sql
-# @weeb_oo
+# @mr_nack_nack
 
 from sys import argv
 from typing import Optional

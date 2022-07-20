@@ -13,7 +13,7 @@ import YorForger.modules.sql.users_sql as sql
 
 
 
-# Stats Module
+# Stats Module By @Void_Toxic
 
 async def bot_sys_stats():
     bot_uptime = int(time.time() - StartTime)

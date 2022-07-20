@@ -109,11 +109,6 @@ def ping(update: Update, context: CallbackContext):
 
     message.delete()
 
-@pbot.on_callback_query(filters.regex("stats_callback"))
-async def stats_callback(_, CallbackQuery):
-    text = await bot_sys_stats()
-    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
-
 @run_async
 def pingall(update: Update, context: CallbackContext):
     to_ping = ["Kaizoku", "Kayo", "Telegram", "Jikan"]

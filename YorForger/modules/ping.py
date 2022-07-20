@@ -20,7 +20,6 @@ from telegram.ext import (
 )
 
 from YorForger import StartTime, dispatcher, pbot
-from Pyrogram import filters
 from YorForger.modules.disable import DisableAbleCommandHandler
 
 sites_list = {

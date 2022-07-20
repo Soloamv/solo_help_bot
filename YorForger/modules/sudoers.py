@@ -7,7 +7,7 @@ import psutil
 from pyrogram import filters
 
 from YorForger import (StartTime, DEV_USERS, pbot)
-import YorForger.utils.formatter as formatter
+import YorForger.utlis.formatter as formatter
 import YorForger.modules.sql.users_sql as sql
 
 

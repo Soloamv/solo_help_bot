@@ -101,7 +101,7 @@ def ping(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Gojo System Stats", callback_data="stats_callback")
+                  InlineKeyboardButton(text="Gojo Help", callback_data="help_back")
                   ]
                 ]
             ),
@@ -126,7 +126,7 @@ def pingall(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Gojo System Stats", callback_data="stats_callback")
+                  InlineKeyboardButton(text="Gojo Help", callback_data="help_back")
                   ]
                 ]
             ),

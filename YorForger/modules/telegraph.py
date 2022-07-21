@@ -21,7 +21,7 @@ async def _(event):
         start = datetime.now()
         r_message = await event.get_reply_message()
         input_str = event.pattern_match.group(1)
-        if input_str == "m":
+        if input_str == "gm":
             downloaded_file_name = await tbot.download_media(
                 r_message,
                 TMP_DOWNLOAD_DIRECTORY
@@ -42,8 +42,8 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await h.edit("Uploaded to [Telegraph](https://telegra.ph{}) in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
-        elif input_str == "xt":
-            user_object = await tbot.get_entity(r_message.sender_id)
+        elif input_str == "gt":
+            user_object = await telethn.get_entity(r_message.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
             # apparently, all Users do not have last_name field
             if optional_title:
@@ -52,7 +52,7 @@ async def _(event):
             if r_message.media:
                 if page_content != "":
                     title_of_page = page_content
-                downloaded_file_name = await tbot.download_media(
+                downloaded_file_name = await telethn.download_media(
                     r_message,
                     TMP_DOWNLOAD_DIRECTORY
                 )
@@ -69,7 +69,7 @@ async def _(event):
             )
             end = datetime.now()
             ms = (end - start).seconds
-            await event.reply("Pasted to [Telegraph](https://telegra.ph/{}) in {} seconds.".format(response["path"], ms), link_preview=True)
+            await event.reply("Pasted to https://telegra.ph/{}".format(response["path"], ms), link_preview=True)
     else:
         await event.reply("Reply to a message to get a permanent telegra.ph link.")
 
